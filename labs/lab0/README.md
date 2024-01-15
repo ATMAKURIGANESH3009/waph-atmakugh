@@ -89,7 +89,7 @@ Repository URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git](https:
 
 **Screenshot showing commiting the changes in VM**
 
-![ss3](/Coursefileswaph/ss3.png)
+![ss3](/home/administrator/Coursefileswaph/ss3.png)
 
 
 
