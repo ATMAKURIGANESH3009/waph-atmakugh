@@ -10,7 +10,8 @@
 **Email**: atmakugh@mail.uc.edu
 
 **Short-bio**: A masters student with communication,organizational, and technical skills seeking opportunities. A hand-working and motivated engineering student with authentic skills in user application development and design thinking,dedicated to levaraging my abilities as a capable and diligent student
-![ganesh headshot](images/AG photo.jpg)
+<br>
+![ganesh headshot](images/AG photo.jpg) <br>
 
 ## Repository Information
 
@@ -26,8 +27,9 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
 
 ### LAB 0 
 
-**Part 1** - Ubuntu Virtual Machine & Software Installation
-- Open Sandbox with UC credentials
+**Part 1** - Ubuntu Virtual Machine & Software Installation <br>
+
+- Open Sandbox with UC credentials <br>
 - Search for the VM *web app programming* in the catalog
 - Click on Request
 - Enter the computer name 
@@ -50,15 +52,20 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
   - sudo apt-get install texlive-fonts-extra
 - Now all the required softwares are installed properly
 
-**Apache web server Testing**
+**Apache web server Testing** <br>
+
 ![ss1](images/ss1.png)
 
-**Part 2** - git repositories and excercises
 
-**The Course repository**
-![ss2](images/ss2.png)
+**Part 2** - git repositories and excercises <br>
 
-**Private Repository**
+**The Course repository** <br>
+
+![ss2](images/ss2.png) 
+
+
+**Private Repository** <br>
+
 - To creat a new private repository on gitbub, first we need to sign in with our credentials
 - Click on profile icon on right side
 - Click on your repositories
@@ -69,7 +76,8 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
 
 Repository URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git](https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git)
 
-**Generating and setting up ssh keys**
+**Generating and setting up ssh keys** <br>
+
 - Type the command ssh-keygen
 - Leave the blank and click enter when it asked for passphrase
 - To view the file use ls ~/.ssh/
@@ -87,7 +95,7 @@ Repository URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git](https:
 - Inside labs, create a subfolder lab0
 - Use the template provided to establish the report for lab0
 
-**Screenshot showing commiting the changes in VM**
+**Screenshot showing commiting the changes in VM** <br>
 
 ![ss3](images/ss3.png)
 
