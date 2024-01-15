@@ -51,12 +51,12 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
 - Now all the required softwares are installed properly
 
 **Apache web server Testing**
-![ss1](./Coursefileswaph/ss1.png)
+![ss1](Coursefileswaph/ss1.png)
 
 **Part 2** - git repositories and excercises
 
 **The Course repository**
-![ss2](./Coursefileswaph/ss2.png)
+![ss2](home/administrator/Coursefileswaph/ss2.png)
 
 **Private Repository**
 - To creat a new private repository on gitbub, first we need to sign in with our credentials
