@@ -10,7 +10,7 @@
 **Email**: atmakugh@mail.uc.edu
 
 **Short-bio**: A masters student with communication,organizational, and technical skills seeking opportunities. A hand-working and motivated engineering student with authentic skills in user application development and design thinking,dedicated to levaraging my abilities as a capable and diligent student
-![ganesh headshot](/Coursefileswaph/AG photo.jpg)
+![ganesh headshot](images/AG photo.jpg)
 
 ## Repository Information
 
@@ -51,12 +51,12 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
 - Now all the required softwares are installed properly
 
 **Apache web server Testing**
-![ss1](Coursefileswaph/ss1.png)
+![ss1](images/ss1.png)
 
 **Part 2** - git repositories and excercises
 
 **The Course repository**
-![ss2](home/administrator/Coursefileswaph/ss2.png)
+![ss2](images/ss2.png)
 
 **Private Repository**
 - To creat a new private repository on gitbub, first we need to sign in with our credentials
@@ -89,7 +89,7 @@ Repository URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git](https:
 
 **Screenshot showing commiting the changes in VM**
 
-![ss3](/home/administrator/Coursefileswaph/ss3.png)
+![ss3](images/ss3.png)
 
 
 
