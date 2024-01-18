@@ -23,7 +23,7 @@ This is a private repository for Atmakuri Ganesh to store all code from the cour
 
 [Hands-on exercises in lectures](labs) 
 
-  - [Lab 0](labs/lab0): Development Environment Setup 
+  - [Lab 0](https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/main/labs/lab0): Development Environment Setup 
 
 ### LAB 0 
 
