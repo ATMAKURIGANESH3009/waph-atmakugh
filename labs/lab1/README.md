@@ -45,17 +45,19 @@ Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/mai
 - Click on http request GET/index.html
 - Analyze the http request message. 
 - Similarly, click on response message to analyze http response message 
-- Next, right click on http request -> Follow -> http stream to understand http request and response message as it displays protocol streams <br>
+- Next, right click on http request -> Follow -> http stream to understand http request and response message as it displays protocol streams 
+- Following are the screenshots for the Task 1 <br>
+- ......
+- ......
+- ......
 
 ![HTTP Request](images/P1T1.1.png) 
 
-
-
 ![HTTP Response](images/P1T1.2.png) 
 
-
-
 ![HTTP Stream](images/P1T1.3.png) 
+
+
 
 ## Task 2 - Understanding HTTP using telnet and Wireshark
 
@@ -77,7 +79,10 @@ Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/mai
 
 ![HTTP Request message](images/P1T2.2.png) 
 
-- There is quite not many differences with the http response message between terminal and web generated. <br>
+- There is quite not many differences with the http response message between terminal and web generated. 
+- ......
+- ......
+- ......
 
 ![HTTP Response message](images/P1T2.3.png) 
 
@@ -144,14 +149,16 @@ Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/mai
 - Before, running the php code, start capturing the packets in wireshark
 - Go to the terminal and deploy the program
 - After run the localhost link in browser with the input data given and then stop capturing the packets
-- Observe http request and response message by clicking on show packet in new window <br>
+- Observe http request and response message by clicking on show packet in new window 
+- Figure 13 describes the screenshot for this task. <br>
 
 ![Understanding echo.php through wireshark](images/P2T3.1.png) 
 
 - b. Curl is used to test the php page with post request
 - First we need to install the curl using *sudo apt install curl*
 - Type the request in the terminal by giving the command *Curl -X POST http://localhost/echo.php -d "data="Hello world,from Ganesh"*
-- The terminal will display the http response after the POST request <br>
+- The terminal will display the http response after the POST request 
+- Figure 14 and Figure 15 describes the screenshots for this task.<br>
 
 
 ![HTTP POST Request](images/P2T3.2.1.png) 
