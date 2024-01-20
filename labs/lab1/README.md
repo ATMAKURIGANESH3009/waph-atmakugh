@@ -27,7 +27,7 @@
 
 ## Repository Information
 
-Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git](https://github.com/ATMAKURIGANESH3009/waph-atmakugh.git)
+Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/main/labs/lab1](https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/main/labs/lab1)
 
 
 ## PART 1 - The web and http protocol
