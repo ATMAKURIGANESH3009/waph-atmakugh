@@ -77,7 +77,11 @@
 
 			function jQueryAjax() {
 				var input = $("#data").val();
-				if (input.length == 0) return;
+				if (!input) {
+					alert("Please give some input");
+					return;
+				}
+				
 				$.get("echo_2.php?data="+input,
 					function(result) {
 						$("#response").html("Response from server:" + result);
@@ -88,7 +92,11 @@
 
 			function jQueryAjaxPost() {
 				var input = $("#data").val();
-				if (input.length == 0) return;
+				if (!input) {
+					alert("Please give some input");
+					return;
+				}
+				
 				$.get("echo_2.php", {data: input},
 					function(result) {
 						$("#response").html("Response from server:" + result);
