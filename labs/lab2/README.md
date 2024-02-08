@@ -10,19 +10,6 @@
 **Email**: atmakugh@mail.uc.edu
 
 **Short-bio**: A masters student with communication,organizational, and technical skills seeking opportunities. A hand-working and motivated engineering student with authentic skills in user application development and design thinking,dedicated to levaraging my abilities as a capable and diligent student <br>
-
-![Ganesh headshot](images/AGphoto.jpg) 
-
-
-
- 
-## Lab Overview 
-
-- This lab covers Frontend web development
-- Task 1 primarly focuses on developing simple html web page with basic tags
-- This lab also covers using echo.php to handle GET and POST requests
-- Task 1 also covers using inlined and external javascript 
-- Task 2 covers about the ajax, CSS, jquery, and web api integration
 - Types of CSS is also covered in CSS
 - Fetch(), JSON(), async, await functions are seen in the Task 2 
 
@@ -39,8 +26,6 @@ Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/mai
 - It contains course name, instructor id, student details, student headset using h and img tag
 - Next, I have developed a form with HTTP get request
 - In this, I have used echo.php file which was generated in the last lab for the request purpose
-- Similarly, I have createed a code for POST request using form tag
-- Code for this task (fig 2) :<br>
 
 ![Basic HTML](images/t1.a.1.png) 
 
@@ -55,7 +40,9 @@ Respository's URL: [https://github.com/ATMAKURIGANESH3009/waph-atmakugh/tree/mai
 ![Inline Javascript Date()](images/inlined.png) 
 
 - Next task is to creat digital clock as well as analog clock
-- I developed a function to display clock and I have set the interval to change the time every 500ms (fig 5)<br>
+- I developed a function to display clock and I have set the interval to change the time every
+- Similarly, I have createed a code for POST request using form tag
+- Code for this task (fig 2) :<br> 500ms (fig 5)<br>
 
 ![Digitalclock](images/digitalclock.png) 
 
