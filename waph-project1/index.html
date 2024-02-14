@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Atmakuri</title>
+
+  <!-- <style>
+    .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 {
+    background-color: #b94386; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: rgb(0,0,0); /* Black */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #9bd158; /* Dark lime */
+    color: #ffffff;
+  }
+  .bg-5 {
+    background-color: #5293c6; /* Sky blue */
+    color: #555555;
+  }
+  .bg-6 {
+    background-color: #cac53b; /* Yellow */
+    color: #ffffff;
+  }
+    </style> -->
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid bg-1 text-center">
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> Website</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Experience</a></li>
+          <li><a href="#services1" class="menu-btn">Projects</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+          <li><a href="waph.html" class="menu-btn">WAPH</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+  </div>
+    
+  <!-- home section start-->
+  <div class="container-fluid bg-2 text-center">
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+        <div class="text-2">Ganesh Atmakuri</div>
+        <div class="text-3">Im a <span class="typing"></span></div>
+        <canvas id="analog-clock" width="150" height="150" style="background-color:#ffffff" align-items:"start" ></canvas>
+        
+        <script src="https://waph-uc.github.io/clock.js"></script>
+        <script>
+         
+      
+          var canvas = document.getElementById("analog-clock");
+          var ctx = canvas.getContext("2d");
+          var radius = canvas.height / 2;
+          ctx.translate(radius,radius);
+          radius = radius *0.90
+          setInterval(drawClock,1000);
+      
+          function drawClock() {
+            drawFace(ctx,radius);
+            drawNumbers(ctx,radius);
+            drawTime(ctx,radius); 
+          }
+
+          $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+				function(result){
+					console.log("From jokeAPI: " + JSON.stringify(result));
+					$("#response").html("A programming joke of the day: " + result.joke);
+				}
+			);
+
+      
+      function httpGetAsync(url, callback) {
+                  const xmlHttp = new XMLHttpRequest();
+                  xmlHttp.onreadystatechange = function() {
+                      if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+                      callback(xmlHttp.responseText);
+                  }
+                  xmlHttp.open("GET", url, true); // true for asynchronous
+                  xmlHttp.send(null);
+              }
+
+              const url = "https://ipgeolocation.abstractapi.com/v1/?api_key=ed91aadd13f04b6b85effd5424863784&fields=country,city"
+
+              httpGetAsync(url)
+
+              $.get("https://ipgeolocation.abstractapi.com/v1/?api_key=ed91aadd13f04b6b85effd5424863784", function(data) {
+       console.log(data.ip_address);
+       console.log(data.country);
+       $('#api').html("Ip_address" + data.ip_address);
+       $('#api').html("City" + data.country);
+   })
+
+   var data = 'https://api-ninjas.com';
+var category = 'technology'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/randomimage?category=' + category,
+    headers: { 'X-Api-Key': 'rVeFm7ODst14HDLYZ5xYvg==0fZzzRcXMXMrxAVT', 'Accept': 'image/jpg'},
+    success: function(result) {
+        console.log(result);
+        $('#img').attr('src', result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+          </script>
+      </div>
+    </div>
+
+    <div id="digital-clock"></div>
+    
+    <div id="root"></div>
+
+    <!-- Include your React component script here -->
+    <script type="module" src="reactcounter.jsx"></script>
+		<script>
+			function displayTime(){
+				document.getElementById('digital-clock').innerHTML="Current time: " + new Date(); }
+			setInterval(displayTime,500);
+
+      </script>
+        <img id="img" src="" alt="Preview Image">
+  </section>
+
+  <!-- about section -->
+ 
+  <section class="about" id="about">
+    <div>
+    <a href="https://info.flagcounter.com/Cjfs"><img src="https://s01.flagcounter.com/count2/Cjfs/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+    </div>
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+          <img src="images/AG photo.jpeg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm Ganesh Atmakuri and Im a <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            A master's student with communication, 
+            organizational, and technical skills seeking 
+            opportunities. A hard-working and motivated 
+            engineering student with authentic skills in 
+            user application development and design 
+            thinking, dedicated to leveraging abilities as a 
+            capable and diligent student 
+          </p>
+          <a href="https://drive.google.com/file/d/1JRvBIZFJ4HMKgZZAYhlxC3RUOls5gqvA/view">Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!-- Experience Section -->
+  <div class="container-fluid bg-3 text-center">
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Work Experience</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Graduate Teaching Assistant</div>
+            <p class="para" style="color: #ffffff;">
+            Supported faculty members in designing course presentations and assisted students with subjects "Advanced 
+            System Administration" and "Database Management," ensuring alignment with curriculum objectives.  
+            Evaluated student performance through grading assignments and exams, providing feedback and clarification on 
+            course syllabus, activities to promote student learning.  
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Senior Analyst - Capgemini</div>
+            <p class="para" style="color: #ffffff;">
+              Constructed optimized PL/SQL and Java code for generating reports and forms using Oracle Apps DBA, BI 
+              Publisher, and Report Builder. Ensured weekly alignment with client requirements, improving efficiency and 
+              reliability of reporting and data management systems.  
+              Ensured data accuracy within the Oracle HRMS database, accurately extracting essential information for software 
+              development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!-- Projects Section -->
+  <div class="container-fluid bg-6 text-center">
+    <section class="services1" id="services1">
+      <div class="max-width">
+        <h2 class="title" data-aos="fade-down">My Projects</h2>
+        <div class="serv-content">
+          <div class="card" data-aos="flip-left">
+            <div class="box">
+              <i class="fas fa-laptop-code"></i>
+              <div class="text">Detecting Eavesdropping Attacks: Research Project, University of Bolton (UK) </div>
+              <p>
+                Developed computationally better machine learning algorithms as well as robustness against eavesdropping attacks. 
+                Predicted eavesdropping attacks formed on network traffic data. Analyzed various algorithms and determined 
+                optimized algorithm.Leveraged advanced statistical techniques to find critical factors boosting data cleaning by 15% and built 
+                captivating Tableau dashboards to showcase these insights appearance.  
+              </p>
+            </div>
+          </div>
+  
+          <div class="card" data-aos="flip-left">
+            <div class="box">
+              <i class="fas fa-code"></i>
+              <div class="text">Chit-Chat: Open-Source Project, Lets Upgrade (India) </div>
+              <p>
+                Created and implemented a machine-learning discussion dialog engine utilizing Rasa framework. Chit-chat 
+              innovative system enables generation of contextually relevant responses by leveraging extensive collections of past 
+              conversations related to covid-19. Used advanced natural language processing techniques and Rasa X to boost dialogue flow and user engagement. 
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="flip-left">
+            <div class="box">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="text">Breast cancer Prediction: Sparks foundation workshop, India  </div>
+              <p>
+                Implemented advanced predictive models using breast cancer data, enabling model to achieve a precise 90% 
+                accuracy in detecting whether a person having malignant or benign type cancer.  
+                Demonstrated data-driven insights in significant improvements in diagnostic accuracy and sensitivity, leading to 
+                enhanced early detection rates and ultimately contributing to improve prediction outcomes. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+  </div>
+  <!-- skills section services -->
+  <div class="container-fluid bg-4 text-center">
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My creative skills & experiences.
+          </div>
+          <p class="paragraph-2">
+            I bring a comprehensive skill set to the table, combining expertise in statistical analysis, machine learning, and data visualization. 
+            Proficient in programming languages such as Python, R, and SQL, I have a proven track record of leveraging advanced analytics techniques to derive actionable insights from complex datasets. 
+            My experience includes developing predictive models, implementing data-driven solutions, and communicating findings to stakeholders in a clear and compelling manner.
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <img src="images\skill-icons\icons8-python.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-power-bi.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
+          </div>
+          <div class="icons">
+            <img src="images\skill-icons\icons8-tableau-software.svg" alt="html", id="html-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
+      </div>
+  </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container-fluid bg-5 text-center">
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">Let's connect and explore the possibilities together! Let's chat or email me to exchange ideas, 
+            share insights, and embark on an exciting journey together. Get in touch today, and let's make great things happen!
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Ganesh Atmakuri</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">306 Klotter Avenue, Cincinnati, OH, 45219</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <!-- <div class="head">Email</div> -->
+                <!-- <div class="sub-title">atmakuriganesh1234@gmail.com</div> -->
+                <div id="email" onclick="showhideEmail()" style="color: #ffffff;">Show my email</div>
+			          <script src="email.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">Ganesh Atmakuri</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/atmakuri-ganesh-836241176/"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+          <a href="https://github.com/atmakuriganesh"><i class="fab fa-github"></i>GITHUB</a>
+        </div>
+      </span>
+      <div id="response" style="color: #ffffff;"></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+  
+</body>
+
+</html>
